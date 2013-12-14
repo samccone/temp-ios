@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface tempViewController : UIViewController
+NSInputStream *inputStream;
+NSOutputStream *outputStream;
+
+@interface tempViewController : UIViewController <NSStreamDelegate> {
+    IBOutlet UILabel *temp;
+}
 
 @end
